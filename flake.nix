@@ -22,7 +22,7 @@
     # nix develop
     devShells.default = pkgs.mkShell {
       packages = [
-        quickshell.packages.${system}.default.withModules []
+        (quickshell.packages.${system}.default.withModules [])
       ];
     };
   });
